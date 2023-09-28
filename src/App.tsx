@@ -2,9 +2,10 @@ import "./App.css";
 
 function App() {
   return (
-    <>
-      <h1>Portfolio coming soon...</h1>
-    </>
+    <div className="grid grid-rows-1 grid-cols-[56px_1fr] h-full p-4">
+      <header>Nemr</header>
+      <main>content..</main>
+    </div>
   );
 }
 
