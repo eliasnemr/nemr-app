@@ -29,7 +29,7 @@ function App() {
         <div />
         <section className="px-4 md:px-0">
           <section className="grid grid-cols-1 lg:grid-cols-2 grid-rows-1 gap-16 lg:gap-4">
-            <div>
+            <div className="max-w-[400px]">
               <h1 className="text-5xl mb-2">Elias Nemr</h1>
               <p className="text-slate-400 mb-2">Software Engineer</p>
               <p className="text-slate-300 font-light">
