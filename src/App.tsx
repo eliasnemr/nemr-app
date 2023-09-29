@@ -132,8 +132,13 @@ function App() {
               className="grid grid-rows-1 grid-cols-[100px_1fr] gap-16 items-center"
             >
               <h3 className="text-sm text-slate-400">2019-present</h3>
-              <div>
-                <h4>Minima Global</h4>
+              <a
+                href="https://minima.global/"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:bg-slate-500 p-4 rounded-lg delay-50 hover:cursor-pointer ease-in-out transition-colors"
+              >
+                <h4 className="text-white">Minima Global</h4>
                 <p className="text-sm text-slate-400 mb-2">Core Developer</p>
                 <p className="text-slate-100 font-light text-sm">
                   Key developer to the protocol's early development. Developed
@@ -179,7 +184,7 @@ function App() {
 
                   <li>
                     <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
-                      Mysql
+                      MySQL
                     </div>
                   </li>
 
@@ -209,15 +214,19 @@ function App() {
                     </div>
                   </li>
                 </ul>
-              </div>
+              </a>
             </div>
             <div
               id="workexperience"
               className="grid grid-rows-1 grid-cols-[100px_1fr] gap-16 items-center mt-8"
             >
               <h3 className="text-sm text-slate-400">2017-2019</h3>
-              <div>
-                <h4>Avopluto</h4>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                className="hover:bg-slate-500 p-4 rounded-lg delay-50 hover:cursor-pointer ease-in-out transition-colors"
+              >
+                <h4 className="text-white">Avopluto</h4>
                 <p className="text-sm text-slate-400 mb-2">
                   Front-end Developer/Co-founder
                 </p>
@@ -238,7 +247,7 @@ function App() {
                   </li>
                   <li>
                     <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
-                      Mysql
+                      MySQL
                     </div>
                   </li>
                   <li>
@@ -247,7 +256,7 @@ function App() {
                     </div>
                   </li>
                 </ul>
-              </div>
+              </a>
             </div>
           </section>
         </section>
