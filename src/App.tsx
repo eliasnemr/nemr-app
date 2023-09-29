@@ -25,7 +25,10 @@ function App() {
         <div></div>
         <div />
       </header>
-      <main className="grid grid-cols-[1fr_minmax(0,_760px)_1fr] grid-rows-1">
+      <main
+        className="grid grid-cols-[1fr_minmax(0,_760px)_1fr] grid-rows-1"
+        style={{ overflow: "overlay" }}
+      >
         <div />
         <section className="px-4 md:px-0">
           <section className="grid grid-cols-1 lg:grid-cols-2 grid-rows-1 gap-16 lg:gap-4">
@@ -94,7 +97,9 @@ function App() {
               </ul>
             </div>
             <div>
-              <h1 className="text-sm mb-2 text-white font-bold">ABOUT</h1>
+              <h1 className="text-sm mb-8 text-white font-bold lg:hidden">
+                ABOUT
+              </h1>
               <p className="text-slate-400 mb-2">
                 "Curiosity killed the cat, but{" "}
                 <span className="font-bold text-white">code</span> brought it
@@ -104,11 +109,145 @@ function App() {
                 <span className="font-bold text-white">
                   technological revoluton
                 </span>
-                . It all started with the transparent game-boy color, sega,
-                playstations & computer gaming. At the age of 12 I Google'd 'How
-                to <span className="font-bold text-white">write code</span>' and
+                . It all started with endless hours of gaming with the
+                cassette-transparent Game Boy, cartridge Sega, cd-rom
+                Playstation & digital computer.{" "}
+                <span className="font-extralight">
+                  'How on earth are all these built?'
+                </span>{" "}
+                &mdash; At the age of 12 I Google'd "How to{" "}
+                <span className="font-bold text-white">write code</span>" and
                 the rest was history.
               </p>
+            </div>
+          </section>
+
+          <section className="mt-16 pb-8">
+            <h1 className="text-sm mb-8 text-white font-bold">
+              WORK EXPERIENCE
+            </h1>
+
+            <div
+              id="workexperience"
+              className="grid grid-rows-1 grid-cols-[100px_1fr] gap-16 items-center"
+            >
+              <h3 className="text-sm text-slate-400">2019-present</h3>
+              <div>
+                <h4>Minima Global</h4>
+                <p className="text-sm text-slate-400 mb-2">Core Developer</p>
+                <p className="text-slate-100 font-light text-sm">
+                  Key developer to the protocol's early development. Developed
+                  and maintained a diverse array of decentralized applications
+                  that leverage Smart Contracts; Social apps, financial apps, A
+                  Wallet, Block explorer & full stack payment progressive web
+                  apps. Wrote documentation for the protocol's application layer
+                  stack. Orchestrated projects that were being built by the
+                  community developers. Collaborated on Ethereum-based
+                  contracts.
+                </p>
+                <ul className="mt-2 flex gap-2 flex-wrap text-[12px]">
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1 technology">
+                      React
+                    </div>
+                  </li>
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
+                      Angular
+                    </div>
+                  </li>
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
+                      Typescript
+                    </div>
+                  </li>
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
+                      Vanilla JS
+                    </div>
+                  </li>
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
+                      JQuery
+                    </div>
+                  </li>
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
+                      TypeORM
+                    </div>
+                  </li>
+
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
+                      Mysql
+                    </div>
+                  </li>
+
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
+                      Tailwind CSS
+                    </div>
+                  </li>
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
+                      Vanilla CSS
+                    </div>
+                  </li>
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
+                      SASS/SCSS
+                    </div>
+                  </li>
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
+                      Ionic
+                    </div>
+                  </li>
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
+                      Blockchain
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              id="workexperience"
+              className="grid grid-rows-1 grid-cols-[100px_1fr] gap-16 items-center mt-8"
+            >
+              <h3 className="text-sm text-slate-400">2017-2019</h3>
+              <div>
+                <h4>Avopluto</h4>
+                <p className="text-sm text-slate-400 mb-2">
+                  Front-end Developer/Co-founder
+                </p>
+                <p className="text-slate-100 font-light text-sm">
+                  Consulted with clients business requirements for their
+                  webpage. Developed and maintained the customer's website.
+                </p>
+                <ul className="mt-2 flex gap-2 flex-wrap text-[12px]">
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1 technology">
+                      Wordpress
+                    </div>
+                  </li>
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
+                      Php
+                    </div>
+                  </li>
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
+                      Mysql
+                    </div>
+                  </li>
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
+                      Javascript
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </section>
         </section>
