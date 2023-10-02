@@ -7,10 +7,22 @@ function App() {
     clientY: number;
   }>({ clientX: 0, clientY: 0 });
 
+  const [name, setName] = useState("");
+
+  function typeWriter(text: string, i: number) {
+    if (i <= text.length) {
+      setName(text.substring(0, i + 1));
+    }
+
+    setTimeout(() => typeWriter(text, i + 1), 100);
+  }
+
   useEffect(() => {
     document.body.addEventListener("mousemove", function (evt) {
       setMouseCoords({ clientX: evt.clientX, clientY: evt.clientY });
     });
+
+    typeWriter("Elias Nemr", 0);
   }, []);
 
   return (
@@ -20,9 +32,9 @@ function App() {
       }}
       className={"grid grid-cols-1 grid-rows-[56px_1fr] h-screen"}
     >
-      <header className="grid grid-cols-[1fr_minmax(0,_560px)_1fr] grid-rows-1">
+      <header className="grid grid-cols-[1fr_minmax(0,_760px)_1fr] grid-rows-1">
         <div />
-        <div></div>
+        <div className="flex items-center justify-end"></div>
         <div />
       </header>
       <main
@@ -33,9 +45,20 @@ function App() {
         <section className="px-4 md:px-0">
           <section className="grid grid-cols-1 lg:grid-cols-2 grid-rows-1 gap-16 lg:gap-4">
             <div className="max-w-[400px]">
-              <h1 className="text-5xl mb-2">Elias Nemr</h1>
-              <p className="text-slate-400 mb-2">Software Engineer</p>
-              <p className="text-slate-300 font-light">
+              <h1 className="text-5xl mb-2">
+                {name}
+                <span
+                  className={`animate-pulse text-teal-200 ${
+                    name === "Elias Nemr" ? "hidden" : "inline"
+                  }`}
+                >
+                  |
+                </span>
+              </h1>
+              <p className="text-slate-400 mb-2 animate-fadeIn">
+                Software Engineer
+              </p>
+              <p className="text-slate-300 font-light animate-fadeIn">
                 I build exceptional digital experiences. Interested in Web3,
                 Blockchain, Smart Contracts & new tech.
               </p>
@@ -50,7 +73,7 @@ function App() {
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 16 16"
                       fill="currentColor"
-                      className="fill-slate-300 hover:cursor-pointer h-6 w-6 hover:fill-white transition-colors ease-in-out delay-50"
+                      className="fill-slate-300 hover:cursor-pointer h-6 w-6 hover:fill-white transition-colors ease-in-out delay-50 animate-fadeIn"
                       aria-hidden="true"
                     >
                       <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
@@ -67,7 +90,7 @@ function App() {
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 248 204"
                       fill="currentColor"
-                      className="fill-slate-300 h-6 w-6 hover:cursor-pointer hover:fill-white transition-colors ease-in-out delay-50"
+                      className="fill-slate-300 h-6 w-6 hover:cursor-pointer hover:fill-white transition-colors ease-in-out delay-50 animate-fadeIn"
                       aria-hidden="true"
                     >
                       <path
@@ -87,7 +110,7 @@ function App() {
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       fill="currentColor"
-                      className="fill-slate-300 h-6 w-6 hover:cursor-pointer hover:fill-white transition-colors ease-in-out delay-50"
+                      className="fill-slate-300 h-6 w-6 hover:cursor-pointer hover:fill-white transition-colors ease-in-out delay-50 animate-fadeIn"
                       aria-hidden="true"
                     >
                       <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
@@ -100,7 +123,7 @@ function App() {
               <h1 className="text-sm mb-8 text-white font-bold lg:hidden">
                 ABOUT
               </h1>
-              <p className="text-slate-400 mb-2">
+              <p className="text-slate-400 mb-2 animate-fadeIn3">
                 "Curiosity killed the cat, but{" "}
                 <span className="font-bold text-white">code</span> brought it
                 back"
@@ -123,22 +146,37 @@ function App() {
           </section>
 
           <section className="mt-16 pb-8">
-            <h1 className="text-sm mb-8 text-white font-bold">
+            <h1 className="text-sm mb-8 text-white font-bold animate-fadeIn">
               WORK EXPERIENCE
             </h1>
 
             <div
               id="workexperience"
-              className="grid grid-rows-1 grid-cols-[100px_1fr] gap-16 items-center"
+              className="grid grid-rows-1 sm:grid-cols-1 md:grid-cols-[100px_1fr] md:gap-16 sm:gap-1 items-center [&:hover~div]:opacity-50"
             >
-              <h3 className="text-sm text-slate-400">2019-present</h3>
+              <h3 className="text-sm text-slate-400 animate-fadeIn">
+                2019-present
+              </h3>
               <a
                 href="https://minima.global/"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:bg-slate-500 p-4 rounded-lg delay-50 hover:cursor-pointer ease-in-out transition-colors"
+                className="md:hover:bg-slate-500 md:p-4 rounded-lg delay-50 hover:cursor-pointer ease-in-out transition-colors animate-fadeIn3"
               >
-                <h4 className="text-white">Minima Global</h4>
+                <h4 className="text-white sm:hover:text-teal-300 flex gap-1 items-center [&>svg>path]:sm:hover:fill-teal-300 [&>svg]:sm:hover:animate-bounce">
+                  Minima Global{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="16"
+                    viewBox="0 -960 960 960"
+                    width="16"
+                  >
+                    <path
+                      fill="#FAFAFF"
+                      d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"
+                    />
+                  </svg>
+                </h4>
                 <p className="text-sm text-slate-400 mb-2">Core Developer</p>
                 <p className="text-slate-100 font-light text-sm">
                   Key developer to the protocol's early development. Developed
@@ -218,13 +256,15 @@ function App() {
             </div>
             <div
               id="workexperience"
-              className="grid grid-rows-1 grid-cols-[100px_1fr] gap-16 items-center mt-8"
+              className="grid grid-rows-1 sm:grid-cols-1 md:grid-cols-[100px_1fr] md:gap-16 sm:gap-1 items-center mt-8 [&:hover~div]:opacity-50"
             >
-              <h3 className="text-sm text-slate-400">2017-2019</h3>
+              <h3 className="text-sm text-slate-400 animate-fadeIn">
+                2017-2019
+              </h3>
               <a
                 target="_blank"
                 rel="noreferrer"
-                className="hover:bg-slate-500 p-4 rounded-lg delay-50 hover:cursor-pointer ease-in-out transition-colors"
+                className="md:hover:bg-slate-500 md:p-4 rounded-lg delay-50 hover:cursor-pointer ease-in-out transition-colors animate-fadeIn3"
               >
                 <h4 className="text-white">Avopluto</h4>
                 <p className="text-sm text-slate-400 mb-2">
