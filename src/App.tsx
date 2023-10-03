@@ -30,19 +30,14 @@ function App() {
       style={{
         background: `radial-gradient(600px at ${mouseCoords.clientX}px ${mouseCoords.clientY}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
       }}
-      className={"grid grid-cols-1 grid-rows-[56px_1fr] h-screen"}
+      className={"grid grid-cols-1 grid-rows-1 h-screen"}
     >
-      <header className="grid grid-cols-[1fr_minmax(0,_760px)_1fr] grid-rows-1">
-        <div />
-        <div className="flex items-center justify-end"></div>
-        <div />
-      </header>
       <main
-        className="grid grid-cols-[1fr_minmax(0,_760px)_1fr] grid-rows-1"
+        className="grid grid-cols-[1fr_minmax(0,_760px)_1fr] grid-rows-1 pb-16"
         style={{ overflow: "overlay" }}
       >
         <div />
-        <section className="px-4 md:px-0">
+        <section className="px-4 md:px-0 pt-16">
           <section className="grid grid-cols-1 lg:grid-cols-2 grid-rows-1 gap-16 lg:gap-4">
             <div className="max-w-[400px]">
               <h1 className="text-5xl mb-2">
@@ -145,7 +140,7 @@ function App() {
             </div>
           </section>
 
-          <section className="mt-16 pb-8">
+          <section className="mt-16 pb-16">
             <h1 className="text-sm mb-8 text-white font-bold animate-fadeIn">
               WORK EXPERIENCE
             </h1>
@@ -154,7 +149,7 @@ function App() {
               id="workexperience"
               className="grid grid-rows-1 sm:grid-cols-1 md:grid-cols-[100px_1fr] md:gap-16 sm:gap-1 items-center [&:hover~div]:opacity-50"
             >
-              <h3 className="text-sm text-slate-400 animate-fadeIn">
+              <h3 className="text-sm text-slate-400 animate-fadeIn mb-4 md:mb-0">
                 2019-present
               </h3>
               <a
@@ -256,9 +251,9 @@ function App() {
             </div>
             <div
               id="workexperience"
-              className="grid grid-rows-1 sm:grid-cols-1 md:grid-cols-[100px_1fr] md:gap-16 sm:gap-1 items-center mt-8 [&:hover~div]:opacity-50 workexperience2 avopluto"
+              className="grid grid-rows-1 mt-8 sm:grid-cols-1 md:grid-cols-[100px_1fr] md:gap-16 sm:gap-1 items-center mb-16 [&:hover~div]:opacity-50 workexperience2 avopluto"
             >
-              <h3 className="text-sm text-slate-400 animate-fadeIn">
+              <h3 className="text-sm text-slate-400 animate-fadeIn mb-4 md:mb-0">
                 2017-2019
               </h3>
               <a
@@ -298,6 +293,22 @@ function App() {
                 </ul>
               </a>
             </div>
+
+            <a
+              href=""
+              target="_blank"
+              rel="noreferrer"
+              className="cursor-pointer hover:animate-pulse text-white hover:text-teal-300"
+            >
+              View full Résumé
+            </a>
+          </section>
+
+          <section>
+            <h4 className="text-sm text-slate-400 opacity-80 pb-16 float-left max-w-[300px]">
+              Coded on Visual Studio Code by me. Built with React + Vite and
+              styled with TailwindCSS. Deployed using Github Pages.
+            </h4>
           </section>
         </section>
         <div />
