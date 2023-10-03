@@ -300,7 +300,7 @@ function App() {
               href=""
               target="_blank"
               rel="noreferrer"
-              className="cursor-pointer hover:animate-pulse text-white hover:text-teal-300"
+              className="cursor-pointer hover:animate-pulse text-white font-semibold hover:text-teal-300"
             >
               View full Résumé
             </a>
@@ -308,8 +308,14 @@ function App() {
 
           <section>
             <h4 className="text-sm text-slate-400 opacity-80 pb-16 float-left max-w-[300px]">
-              Coded on Visual Studio Code by me. Built with React + Vite and
-              styled with TailwindCSS. Deployed using Github Pages.
+              Coded on{" "}
+              <span className="font-bold text-white">Visual Studio Code</span>{" "}
+              by me. Built with{" "}
+              <span className="font-bold text-white">React</span> +{" "}
+              <span className="font-bold text-white">Vite</span> and styled with{" "}
+              <span className="font-bol text-whited">TailwindCSS</span>.
+              Deployed using{" "}
+              <span className="font-bold text-white">Github Pages</span>.
             </h4>
           </section>
         </section>
