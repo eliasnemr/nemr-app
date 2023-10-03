@@ -4,6 +4,7 @@ import useGetInnerHeight from "./hooks/useGetInnerHeight";
 
 function App() {
   const innerHeight = useGetInnerHeight();
+  const [headerTitle, setHeaderTitle] = useState<false | string>("");
   const [mouseCoords, setMouseCoords] = useState<{
     clientX: number;
     clientY: number;
@@ -20,13 +21,29 @@ function App() {
   }
 
   useEffect(() => {
+    document.body.onscroll = () => {
+      const position = window.scrollY;
+      const aboutPosition = document.getElementById("hh-about")?.offsetTop;
+      const workPosition = document.getElementById("work-exp")?.offsetTop;
+
+      if (position === 0 || position < aboutPosition!) {
+        setHeaderTitle(false);
+      }
+      if (position >= aboutPosition!) {
+        setHeaderTitle("ABOUT");
+      }
+      if (position >= workPosition!) {
+        setHeaderTitle("WORK EXPERIENCE");
+      }
+    };
+
     document.body.addEventListener("mousemove", function (evt) {
       setMouseCoords({ clientX: evt.clientX, clientY: evt.clientY });
     });
 
     typeWriter("Elias Nemr", 0);
   }, []);
-  console.log("innerHeight", innerHeight);
+
   return (
     <div
       style={{
@@ -34,11 +51,18 @@ function App() {
       }}
       className={`grid grid-cols-1 grid-rows-1  h-[${innerHeight}px]`}
     >
-      <main
-        className="grid grid-cols-[1fr_minmax(0,_760px)_1fr] grid-rows-1 pb-16"
-        style={{ overflow: "overlay" }}
-      >
+      <main className="grid grid-cols-[1fr_minmax(0,_760px)_1fr] grid-rows-1 pb-16">
         <div />
+
+        {headerTitle && (
+          <div
+            id="sticky-title"
+            className="md:hidden fixed top-0 left-0 right-0 p-4 text-sm text-white font-bold xl:hidden bg-slate-700 opacity-90"
+          >
+            {headerTitle}
+          </div>
+        )}
+
         <section className="px-4 md:px-0 pt-16">
           <section className="grid grid-cols-1 lg:grid-cols-2 grid-rows-1 gap-16 lg:gap-4">
             <div className="max-w-[400px]">
@@ -49,7 +73,7 @@ function App() {
                     name === "Elias Nemr" ? "hidden" : "inline"
                   }`}
                 >
-                  |
+                  _
                 </span>
               </h1>
               <p className="text-slate-400 mb-2 animate-fadeIn">
@@ -117,7 +141,10 @@ function App() {
               </ul>
             </div>
             <div>
-              <h1 className="text-sm mb-8 text-white font-bold lg:hidden animate-fadeIn3">
+              <h1
+                id="hh-about"
+                className="text-sm mb-8 text-white font-bold lg:hidden animate-fadeIn3"
+              >
                 ABOUT
               </h1>
               <p className="text-slate-400 mb-2 animate-fadeIn3">
@@ -143,7 +170,10 @@ function App() {
           </section>
 
           <section className="mt-16 pb-16">
-            <h1 className="text-sm mb-8 text-white font-bold animate-fadeIn">
+            <h1
+              id="work-exp"
+              className="text-sm mb-8 text-white font-bold animate-fadeIn"
+            >
               WORK EXPERIENCE
             </h1>
 
