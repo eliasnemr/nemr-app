@@ -120,7 +120,7 @@ function App() {
               </ul>
             </div>
             <div>
-              <h1 className="text-sm mb-8 text-white font-bold lg:hidden">
+              <h1 className="text-sm mb-8 text-white font-bold lg:hidden animate-fadeIn3">
                 ABOUT
               </h1>
               <p className="text-slate-400 mb-2 animate-fadeIn3">
@@ -256,7 +256,7 @@ function App() {
             </div>
             <div
               id="workexperience"
-              className="grid grid-rows-1 sm:grid-cols-1 md:grid-cols-[100px_1fr] md:gap-16 sm:gap-1 items-center mt-8 [&:hover~div]:opacity-50"
+              className="grid grid-rows-1 sm:grid-cols-1 md:grid-cols-[100px_1fr] md:gap-16 sm:gap-1 items-center mt-8 [&:hover~div]:opacity-50 workexperience2 avopluto"
             >
               <h3 className="text-sm text-slate-400 animate-fadeIn">
                 2017-2019
