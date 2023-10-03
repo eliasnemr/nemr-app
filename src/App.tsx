@@ -149,7 +149,7 @@ function App() {
 
             <div
               id="workexperience"
-              className="grid grid-rows-1 sm:grid-cols-1 md:grid-cols-[100px_1fr] md:gap-16 sm:gap-1 items-center [&:hover~div]:opacity-50"
+              className="grid grid-rows-1 sm:grid-cols-1 md:grid-cols-[100px_1fr] md:gap-16 sm:gap-1 items-center md:[&:hover~div]:opacity-50"
             >
               <h3 className="text-sm text-slate-400 animate-fadeIn mb-4 md:mb-0">
                 2019-present
