@@ -22,8 +22,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background-color);
   background-size: cover;
+  overflow: overlay;
   background-repeat: no-repeat;
-  overflow: hidden;
   -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth;
 
@@ -99,12 +99,12 @@ div:has(+ .avopluto:hover) {
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-main::-webkit-scrollbar {
+*::-webkit-scrollbar {
   display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
-main {
+* {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }

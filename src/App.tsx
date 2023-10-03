@@ -26,14 +26,13 @@ function App() {
 
     typeWriter("Elias Nemr", 0);
   }, []);
-
+  console.log("innerHeight", innerHeight);
   return (
     <div
       style={{
         background: `radial-gradient(600px at ${mouseCoords.clientX}px ${mouseCoords.clientY}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
-        height: innerHeight + " px",
       }}
-      className={"grid grid-cols-1 grid-rows-1 h-screen"}
+      className={`grid grid-cols-1 grid-rows-1  h-[${innerHeight}px]`}
     >
       <main
         className="grid grid-cols-[1fr_minmax(0,_760px)_1fr] grid-rows-1 pb-16"
