@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import useGetInnerHeight from "./hooks/useGetInnerHeight";
 
 function App() {
+  const innerHeight = useGetInnerHeight();
   const [mouseCoords, setMouseCoords] = useState<{
     clientX: number;
     clientY: number;
@@ -29,6 +31,7 @@ function App() {
     <div
       style={{
         background: `radial-gradient(600px at ${mouseCoords.clientX}px ${mouseCoords.clientY}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
+        height: innerHeight + " px",
       }}
       className={"grid grid-cols-1 grid-rows-1 h-screen"}
     >
