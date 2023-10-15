@@ -312,6 +312,11 @@ function App() {
                       discord.js
                     </div>
                   </li>
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
+                      Docusaurus
+                    </div>
+                  </li>
                 </ul>
               </a>
             </div>
