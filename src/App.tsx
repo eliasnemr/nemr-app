@@ -80,8 +80,8 @@ function App() {
                 Software Engineer
               </p>
               <p className="text-slate-300 font-light animate-fadeIn">
-                I build exceptional digital experiences. Interested in Web3,
-                Blockchain, Smart Contracts & new tech.
+                I build exceptional digital experiences. Experienced in web
+                development, deFi, Blockchain & smart contracts.
               </p>
               <ul className="mt-4 flex gap-4 items-center gap">
                 <li>
@@ -148,9 +148,8 @@ function App() {
                 ABOUT
               </h1>
               <p className="text-slate-400 mb-2 animate-fadeIn3">
-                "Curiosity killed the cat, but{" "}
-                <span className="font-bold text-white">code</span> brought it
-                back"
+                “It’s really complex to make something simple.” -{" "}
+                <span className="text-sm">J. Dorsey</span>
                 <br /> <br />
                 My middle childhood and junior years were taken by the{" "}
                 <span className="font-bold text-white">
@@ -164,7 +163,7 @@ function App() {
                 </span>{" "}
                 &mdash; At the age of 12 I Google'd "How to{" "}
                 <span className="font-bold text-white">write code</span>" and
-                the rest was history.
+                the rest was history and the present.
               </p>
             </div>
           </section>
@@ -218,17 +217,12 @@ function App() {
                 <ul className="mt-2 flex gap-2 flex-wrap text-[12px]">
                   <li>
                     <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1 technology">
-                      React
+                      React JS
                     </div>
                   </li>
                   <li>
                     <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
-                      Angular
-                    </div>
-                  </li>
-                  <li>
-                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
-                      Typescript
+                      Angular JS
                     </div>
                   </li>
                   <li>
@@ -238,7 +232,37 @@ function App() {
                   </li>
                   <li>
                     <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
+                      Typescript
+                    </div>
+                  </li>
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
                       JQuery
+                    </div>
+                  </li>
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
+                      Redux
+                    </div>
+                  </li>
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
+                      Java
+                    </div>
+                  </li>
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
+                      Rest API
+                    </div>
+                  </li>
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
+                      GCloud
+                    </div>
+                  </li>
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
+                      LAMP Stack
                     </div>
                   </li>
                   <li>
@@ -276,6 +300,16 @@ function App() {
                   <li>
                     <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
                       Blockchain
+                    </div>
+                  </li>
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
+                      ethers.js
+                    </div>
+                  </li>
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
+                      discord.js
                     </div>
                   </li>
                 </ul>
