@@ -80,8 +80,8 @@ function App() {
                 Software Engineer
               </p>
               <p className="text-slate-300 font-light animate-fadeIn">
-                I build exceptional digital experiences. Experienced in web
-                development, deFi, Blockchain & smart contracts.
+                I build exceptional digital experiences. Experienced in Web
+                Development, DeFi, Blockchain & Smart Contracts.
               </p>
               <ul className="mt-4 flex gap-4 items-center gap">
                 <li>
@@ -172,11 +172,11 @@ function App() {
                 “It’s really complex to make something simple.” -{" "}
                 <span className="text-sm">J. Dorsey</span>
                 <br /> <br />
-                My middle childhood and junior years were taken by the{" "}
+                My formative years were taken by the{" "}
                 <span className="font-bold text-white">
-                  technological revoluton
+                  technological revolution
                 </span>
-                . It all started with endless hours of gaming with the
+                . It commenced with endless hours of gaming with the
                 cassette-transparent Game Boy, cartridge Sega, cd-rom
                 Playstation & digital computer.{" "}
                 <span className="font-extralight">
