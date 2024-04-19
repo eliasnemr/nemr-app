@@ -232,7 +232,7 @@ function App() {
                   Wallet, Block explorer & full stack payment progressive web
                   apps. Wrote documentation for the protocol's application layer
                   stack. Orchestrated projects that were being built by the
-                  community developers.  <br/> 
+                  community developers.  <br/> <br />
                   
                   Developed an Ethereum Wallet, a Uniswap v3 swap
                   widget, a v3 Staker Liquidity pool interface and a cross-chain
@@ -334,6 +334,16 @@ function App() {
                   <li>
                     <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
                       Uniswap Protocol
+                    </div>
+                  </li>
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
+                      Solidity
+                    </div>
+                  </li>
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
+                      Remix IDE
                     </div>
                   </li>
                   <li>
