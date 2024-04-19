@@ -232,8 +232,11 @@ function App() {
                   Wallet, Block explorer & full stack payment progressive web
                   apps. Wrote documentation for the protocol's application layer
                   stack. Orchestrated projects that were being built by the
-                  community developers. Collaborated on Ethereum-based
-                  contracts.
+                  community developers.  <br/> 
+                  
+                  Developed an Ethereum Wallet, a Uniswap v3 swap
+                  widget, a v3 Staker Liquidity pool interface and a cross-chain
+                  bridge.
                 </p>
                 <ul className="mt-2 flex gap-2 flex-wrap text-[12px]">
                   <li>
@@ -326,6 +329,11 @@ function App() {
                   <li>
                     <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
                       ethers.js
+                    </div>
+                  </li>
+                  <li>
+                    <div className="rounded-lg bg-slate-800 text-slate-400 max-w-fit px-2 py-1">
+                      Uniswap Protocol
                     </div>
                   </li>
                   <li>
