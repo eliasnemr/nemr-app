@@ -1,0 +1,59 @@
+[
+  {
+    "id": "minimaglobal",
+    "title": "Minima Global",
+    "role": "Lead Developer",
+    "timeline": "2019-present",
+    "description": "Key developer to the protocol's early development.  Developed and maintained a series of single page web-apps that leverage Blockchain APIs and several full-stack applications; Decentralised chat apps, wallets, exchanges and block explorers.  Wrote documentations for the protocol's application layer and taught community and junior developers to understand Blockchain and the decentralised nature of building dApps.",
+    "website": "https://minima.global",
+    "keyActions": [
+      "Aligned with stakeholders to define new products",
+      "Worked with designers to create wireframes & discuss UI/UX",
+      "Translated figma designs to pixel-perfect working web pages",
+      "Maintained, documented and implemented new features",
+      "Worked with multiple smart contract scripting languages",
+      "Collaborated & implemented CI/CD pipelines to reduce deployment time",
+      "Worked with an agile methodology, in addition to daily dev-team stand ups",
+      "Mentored junior & community developers and conducted code reviews"
+    ],
+    "technologies": [
+      "reactjs",
+      "react native",
+      "objective c",
+      "java",
+      "nodejs",
+      "REST APIs",
+      "typescript",
+      "ionic",
+      "material ui",
+      "tailwindcss",
+      "mysql",
+      "LAMP stack",
+      "GSuite",
+      "graphql",
+      "solidity",
+      "blockchain APIs",
+      "discord.js"
+    ]
+  },
+  {
+    "id": "avopluto",
+    "title": "Avopluto",
+    "role": "Founder / Developer",
+    "timeline": "2017-2019",
+    "description": "Co-founded a web-development start up that consulted client online business requirements and created an online presence.",
+    "keyActions": [
+      "Consulted clients on their business product",
+      "Converted their business to an online business using wordpress templates & php",
+      "Hosted their websites on GoDaddy",
+      "Suggested features and implemented",
+      "Maintained and made weekly backups"
+    ],
+    "technologies": [
+      "php",
+      "wordpress",
+      "javascript",
+      "html / css"
+    ]
+  }
+]

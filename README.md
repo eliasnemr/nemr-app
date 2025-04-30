@@ -1,2 +1,3 @@
-# nemr-app
- My portfolio
+# Elias Nemr
+
+- I wrote this simple portfolio website, it is work in progress, should be adding more to it as time goes...
