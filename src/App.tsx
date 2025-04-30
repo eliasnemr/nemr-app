@@ -5,6 +5,7 @@ import useGetInnerHeight from "./hooks/useGetInnerHeight";
 import WorkExperiences from "./components/WorkExperiences.tsx";
 
 function App() {
+  const [isReady, setReady] = useState(false);
   const innerHeight = useGetInnerHeight();
   const [headerTitle, setHeaderTitle] = useState<false | string>("");
   const [mouseCoords, setMouseCoords] = useState<{
@@ -21,6 +22,10 @@ function App() {
 
     setTimeout(() => typeWriter(text, i + 1), 100);
   }
+
+  useEffect(() => {
+    document.fonts.load("12px Inter").then(() => setReady(true));
+  }, []);
 
   useEffect(() => {
     document.body.onscroll = () => {
@@ -47,7 +52,7 @@ function App() {
   }, []);
 
   return (
-    <div
+      isReady && <div
       style={{
         background: `radial-gradient(600px at ${mouseCoords.clientX}px ${mouseCoords.clientY}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
       }}
